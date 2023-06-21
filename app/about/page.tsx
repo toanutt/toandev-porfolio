@@ -1,3 +1,9 @@
+import OverView from "@/components/layout/overview/overview";
+
 export default function About() {
-  return <div>This is About page</div>;
+  return (
+    <>
+      <OverView />
+    </>
+  );
 }
