@@ -1,8 +1,8 @@
 import { NavItem } from "@/types";
 
 export const ListNavItem: NavItem[] = [
-  { title: "About ", href: "/about", active: false },
+  { title: "Home ", href: "/home", active: false },
   { title: "Experience ", href: "/experience", active: false },
-  { title: "Tech ", href: "/tech", active: false },
-  { title: "Works ", href: "/works", active: false },
+  { title: "Project ", href: "/project", active: false },
+  { title: "Resume ", href: "/resume", active: false },
 ];
