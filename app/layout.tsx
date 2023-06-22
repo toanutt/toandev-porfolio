@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/navbar/navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import ToanNav from "@/components/layout/navbar/toan";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className="flex flex-col min-h-full bg-[radial-gradient(145.05%_100%_at_50%_0%,#1D2B41_0%,#020509_57.38%,#0F1A29_88.16%)] font-sans text-slate-600 antialiased">
         <Navbar />
+        {/* <ToanNav /> */}
         {children}
       </body>
     </html>
