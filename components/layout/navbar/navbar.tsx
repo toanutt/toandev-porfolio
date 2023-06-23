@@ -14,12 +14,12 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <header className="bg-white">
+    <header>
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 "
         aria-label="Global"
       >
-        <div className="flex lg:flex-1">
+        <div className="flex lg:flex-1 ">
           <a
             rel="noopener noreferrer"
             target="_blank"
@@ -102,36 +102,53 @@ export default function Navbar() {
               </Popover.Panel>
             </Transition>
           </Popover> */}
-          <HomeOutlined />
-          <a
-            href="/home"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Home
-          </a>
-          <ScheduleOutlined />
-          <a
-            href="/experience"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Experience
-          </a>
+          <div className="flex items-center text-white">
+            <a
+              href="/home"
+              className="flex items-center justify-center px-1 text-sm font-semibold leading-6 "
+            >
+              <HomeOutlined />
+              Home
+            </a>
+          </div>
 
-          <FundProjectionScreenOutlined />
-          <a
-            href="/project"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Project
-          </a>
+          {/* <div class="flex overflow-hidden bg-white divide-x rounded-lg rtl:flex-row-reverse dark:bg-gray-900 dark:border-gray-700 dark:divide-gray-700">
+            <a class="flex items-center px-4 py-2 text-sm font-medium text-gray-600 transition-colors duration-200 sm:text-base sm:px-6 dark:hover:bg-gray-800 dark:text-gray-300 gap-x-3 hover:bg-gray-100">
+              <HomeOutlined />
 
-          <FileTextOutlined />
-          <a
-            href="/resume"
-            className="text-sm font-semibold leading-6 text-gray-900"
-          >
-            Resume
-          </a>
+              <span>Upload</span>
+            </a>
+          </div> */}
+
+          <div className="flex items-center text-white">
+            <a
+              href="/experience"
+              className="flex items-center justify-center px-1 text-sm font-semibold leading-6"
+            >
+              <ScheduleOutlined />
+              Experience
+            </a>
+          </div>
+
+          <div className="flex items-center text-white">
+            <a
+              href="/project"
+              className="flex items-center justify-center px-1 text-sm font-semibold leading-6"
+            >
+              <FundProjectionScreenOutlined />
+              Project
+            </a>
+          </div>
+
+          <div className="flex items-center text-white">
+            <a
+              href="/resume"
+              className="flex items-center justify-center px-1 text-sm font-semibold leading-6 "
+            >
+              <FileTextOutlined />
+              Resume
+            </a>
+          </div>
         </Popover.Group>
       </nav>
     </header>
